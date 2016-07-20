@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Index</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div data-role="page" id="home">
+		<header>
+			<?php
+				get_titulo();
+			?>
+		</header>
+		<?php
+			$login_cookie = $_COOKIE['usuario'];
+				if(isset($login_cookie)){
+					echo "Bem Vindo, $login_cookie<br>";
+					echo "Essas informações <font color="red"> podem</font> ser acessadas por você";
+		?>
+		<?php	}else{
+					echo "<font color="red">Não</font> pode acessar <br>";
+					echo "<a href="login.html"> Faça login</a> para ler"; 
+				}
+		?>		
+
+	</div>
+	
+</body>
+</html>
