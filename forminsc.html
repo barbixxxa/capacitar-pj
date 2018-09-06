@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<form method="POST" action="forminsc.php">
+		<label>E-MAIL:</label>
+		<input type="text" name="email" placeholder="email" id="email"> </input><br>
+		<label>Nome:</label>
+		<input type="text" name="nome" placeholder="nome" id="nome"> </input><br>
+		<label>Sexo:</label>
+		<select name="sexo" id="sexo">
+			<option value="outro">Outro</option>
+			<option value="masculino">Masculino</option>
+			<option value="feminino">Feminino</option>
+		</select><br>
+		<label>Curso:</label>
+		<select name="curso" id="curso">
+			<option value="ec">Engenharia da Computação</option>
+			<option value="si">Sistemas de Informação</option>
+			<option value="cc">Ciência da Computação</option>
+		</select><br>
+		<label>Endereço:</label>
+		<input type="text" name="endereco" placeholder="endereco" id="endereco"> </input><br>
+		<input type="submit" name="button" placeholder="Enviar" id="button"></input>
+
+	</form>
+	
+</body>
+</html>
